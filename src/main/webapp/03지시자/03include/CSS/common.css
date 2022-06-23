@@ -1,0 +1,15 @@
+*{
+    /* border : 1px solid gray;
+    margin:5px; */
+}
+body:not(#banner-slider){
+    margin:10px auto; 
+    
+}
+ul{
+    list-style:none;
+    padding:0px;
+}
+#main-container {
+    padding:50px;
+}
