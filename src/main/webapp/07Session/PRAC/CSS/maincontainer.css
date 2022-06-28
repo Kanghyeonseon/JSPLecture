@@ -1,0 +1,163 @@
+/* content */
+#main-container {}
+
+
+#banner-slider {
+    height: 300px;
+
+
+}
+
+/* 탭스타일시작 */
+#tab {
+    height: 500px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#container {
+    width: 700px;
+    height: 300px;
+    margin-top: 50px;
+    padding: 10px;
+    position: relative;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+#prev,
+#next {
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 50%;
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+    background-color: #424242;
+    box-shadow: 2px 2px 2xp gray;
+}
+
+#prev {
+    left: -60px;
+    top: 15px;
+}
+
+#next {
+    left: calc(700px + 25px);
+    top: 15px;
+}
+
+#tabUI ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#tabUI li {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 2px 2px 2px lightgray;
+}
+
+#tabContents {
+    height: 80%;
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+#tabContents div {
+    display: none;
+}
+
+#tabUI .on {
+    background-color: orange;
+}
+
+#tabContents .on {
+    display: block;
+}
+
+/* 탭스타일끝  */
+
+/* 카드스타일시작 */
+#cards {
+    height: 500px;
+}
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    border: none;
+    margin-bottom: 50px;
+}
+.card img {
+    width: 100%;
+    transition: 0.5s;
+    /* 흑백필터 */
+    filter: grayscale(100%);
+}
+.card img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    filter: grayscale(0%);
+}
+.iteminfo {
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    margin: 0 10%;
+    background-color: white;
+    box-shadow: 0px 0px 14.4px 0.6px rgb(34 30 31 / 30%);
+    padding: 10px;
+}
+.iteminfo span,
+p {
+    font-size: 0.5rem;
+}
+.iteminfo a {
+    font-size: 0.5rem;
+}
+
+/* 카드스타일끝 */
+
+#item-slider {
+    height: 500px;
+}
+#banner-slider img {
+    width: 100%;
+    height: 100%;
+}
+#banner-slider ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.swiper-button-prev {}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next {
+    background: url(/godiva/img/common/next.png) no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+}
+
+.swiper-button-prev {
+    background: url(/godiva/img/common/prev.png) no-repeat;
+}
