@@ -13,26 +13,7 @@
 <%@page import = "Ch09.*, java.util.*" %>
 <%
 	BookDAO dao = BookDAO.getInstance();
-	String type = request.getParameter("type");
-	String word = request.getParameter("word");
-	
-	ArrayList<BookDTO> list = null;
-	
-	BookDTO tdto = new BookDTO();
-	if(type!=null||word!=null) {
-		if(type.equals("C")) {
-			int num = Integer.parseInt(word); // 받아온 word가 문자열이므로 파싱작업필요
-			tdto.setBookcode(num);
-		} else if (type.equals("N")) {
-			tdto.setBookname(word);
-		} else if (type.equals("P")) {
-			tdto.setPublisher(word);
-		}
-		list = dao.Select(type, tdto);
-	} else {
-		 list = dao.Select();
-	}
-	
+	ArrayList<BookDTO> list = dao.Select(100,130);
 %>
 
 <div id="wrapper" class="container-md w-75">
